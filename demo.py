@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from asteroid.models import *
-from scipy.io.wavfile import write, read
+import soundfile as sf
 import torch
 import numpy as np
 
@@ -88,7 +88,7 @@ if option == 'Speech enhancement':
 if option == 'Try me':
 
     def read_array(array,sr):
-        write('temp.wav', sr,array)
+        sf.write('temp.wav', array, sr)
         st.audio('temp.wav', format='audio/wav')
         os.remove('temp.wav')
         return
@@ -140,7 +140,7 @@ if option == 'Try me':
         selected_model = select_model(model, task)
         wav_file = st.file_uploader("Upload your file", type=['wav'])
         if wav_file is not None:
-            sr,mix = read(wav_file)
+            mix, sr = sf.read(wav_file,dtype='float32')
             st.write("Your mixture")
             read_array(mix, sr)
             torch_mix = torch.from_numpy(mix)
@@ -161,7 +161,7 @@ if option == 'Try me':
         selected_model = select_model(model, task)
         wav_file = st.file_uploader("Upload your file", type=['wav'])
         if wav_file is not None:
-            sr,mix = read(wav_file)
+            mix, sr = sf.read(wav_file, dtype='float32')
             st.write("Your mixture")
             read_array(mix, sr)
             torch_mix = torch.from_numpy(mix)
