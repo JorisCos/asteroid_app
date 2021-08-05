@@ -44,7 +44,7 @@ if option == 'Source separation':
             s2 = open(os.path.join(current_path, "s1.wav"), 'rb')
             s2_bytes = s2.read()
 
-            est_s2 = open(os.path.join(current_path, "s0_estimate.wav"), 'rb')
+            est_s2 = open(os.path.join(current_path, "s1_estimate.wav"), 'rb')
             est_s2_bytes = est_s2.read()
 
             est_s1 = open(os.path.join(current_path, "s0_estimate.wav"), 'rb')
