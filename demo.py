@@ -38,16 +38,16 @@ if option == 'Source separation':
             mixture = open(os.path.join(current_path, "mixture.wav"), 'rb')
             mix_bytes = mixture.read()
 
-            s1 = open(os.path.join(current_path, "s1.wav"), 'rb')
+            s1 = open(os.path.join(current_path, "s0.wav"), 'rb')
             s1_bytes = s1.read()
 
-            s2 = open(os.path.join(current_path, "s2.wav"), 'rb')
+            s2 = open(os.path.join(current_path, "s1.wav"), 'rb')
             s2_bytes = s2.read()
 
-            est_s2 = open(os.path.join(current_path, "s2_estimate.wav"), 'rb')
+            est_s2 = open(os.path.join(current_path, "s0_estimate.wav"), 'rb')
             est_s2_bytes = est_s2.read()
 
-            est_s1 = open(os.path.join(current_path, "s1_estimate.wav"), 'rb')
+            est_s1 = open(os.path.join(current_path, "s0_estimate.wav"), 'rb')
             est_s1_bytes = est_s1.read()
 
             st.write("The mixture")
@@ -76,11 +76,18 @@ if option == 'Speech enhancement':
             mixture = open(os.path.join(current_path, "mixture.wav"), 'rb')
             mix_bytes = mixture.read()
 
+            s1 = open(os.path.join(current_path, "s0.wav"), 'rb')
+            s1_bytes = s1.read()
+
             est_s1 = open(os.path.join(current_path, "s0_estimate.wav"), 'rb')
             est_s1_bytes = est_s1.read()
 
             st.write("The mixture")
             st.audio(mix_bytes)
+
+            st.write("The source")
+            st.audio(s1_bytes)
+            st.audio(s2_bytes)
 
             st.write("The estimate")
             st.audio(est_s1_bytes)

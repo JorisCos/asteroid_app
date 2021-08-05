@@ -1,6 +1,13 @@
 {
-"mix_path": "/home/jcosentino/jcosentino/datasets//CHiME3/data/audio/16kHz/isolated/et05_bus_real/F05_440C0202_BUS.CH3.wav",
-"input_wer": 0.08496732026143791,
-"clean_wer": 0.08496732026143791,
-"wer": 0.0784313725490196
+"input_si_sdr": -0.04691008850932121,
+"input_sdr": -0.007384360380628953,
+"input_sir": Infinity,
+"input_sar": -0.007384360380628953,
+"input_stoi": 0.6803765800989144,
+"si_sdr": 12.890264511108398,
+"sdr": 13.213502628932217,
+"sir": Infinity,
+"sar": 13.213502628932217,
+"stoi": 0.9153358357509263,
+"mix_path": "/home/jcosentino/jcosentino/datasets/Libri2Mix/wav16k/min/test/mix_single/6930-76324-0027_5683-32879-0011.wav"
 }

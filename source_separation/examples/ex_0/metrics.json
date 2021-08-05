@@ -1,13 +1,13 @@
 {
-"input_si_sdr": 0.03488779067993164,
-"input_sdr": 0.1485729994306063,
-"input_sir": 0.1485729994306202,
-"input_sar": 149.50735037270024,
-"input_stoi": 0.7454038290187852,
-"si_sdr": 21.168824195861816,
-"sdr": 21.467628075352174,
-"sir": 33.334180863533675,
-"sar": 21.808406096648856,
-"stoi": 0.9753800045689083,
-"mix_path": "/srv/storage/talc3@talc-data.nancy/multispeech/calcul/users/mpariente/DATA/wsj0_wav/2speakers_wham/wav8k/max/tt/mix_clean/050a0501_1.7783_442o030z_-1.7783.wav"
+"input_si_sdr": -0.03188216686248779,
+"input_sdr": 0.01575732633561322,
+"input_sir": 0.01575836109778095,
+"input_sar": 69.68140551578323,
+"input_stoi": 0.765684408305324,
+"si_sdr": 16.928706645965576,
+"sdr": 17.34785129159792,
+"sir": 26.897479387668696,
+"sar": 17.869155104301356,
+"stoi": 0.9714358780914538,
+"mix_path": "/home/jcosentino/jcosentino/datasets/Libri2Mix/wav8k/max/test/mix_clean/4077-13754-0001_5142-33396-0065.wav"
 }

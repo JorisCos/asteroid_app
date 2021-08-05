@@ -26,7 +26,9 @@ This page shows selected audio examples of speech separation and speech enhancem
 
 You can check out these results by clicking on the top left menu selector.
   
-  
+## Licenses
+
+All the examples are taken from the [LibriMix](https://arxiv.org/pdf/2005.11262.pdf) dataset licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 
 
