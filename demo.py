@@ -87,7 +87,6 @@ if option == 'Speech enhancement':
 
             st.write("The source")
             st.audio(s1_bytes)
-            st.audio(s2_bytes)
 
             st.write("The estimate")
             st.audio(est_s1_bytes)
