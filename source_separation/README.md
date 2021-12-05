@@ -2,7 +2,7 @@
 On this page you will find examples related to the source separation task
 (the overlapping speech of two speakers is separated).
   
-The model ([DPRNNTasNet](https://arxiv.org/pdf/1910.06379.pdf)) was trained on [WHAM!](http://wham.whisper.ai/) with 8KHz data.
+The model ([ConvTasNet](https://arxiv.org/pdf/1809.07454.pdf)) was trained on was trained on [LibriMix](https://arxiv.org/pdf/2005.11262.pdf) with 8KHz data.
   
 We randomly selected unseen data from WHAM! test set and processed it by the network to create examples.
   
